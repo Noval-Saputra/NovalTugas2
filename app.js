@@ -13,7 +13,7 @@ const fakultasRouterAPI = require('./app_api/routes/fakultas');
 const beritaRouterAPI = require('./app_api/routes/berita');
 const prodiRouterAPI = require('./app_api/routes/prodi');
 const mahasiswaRouterAPI = require('./app_api/routes/mahasiswa');
-const menuRouterAPI = require('./app_api/routes/menu');
+const gameRouterAPI = require('./app_api/routes/gameRoutes');
 const kategoriRouterAPI = require('./app_api/routes/kategori');
 
 //route app_server
@@ -40,7 +40,7 @@ app.use('/api/fakultas', fakultasRouterAPI); // API route
 app.use('/api/berita', beritaRouterAPI);
 app.use('/api/prodi', prodiRouterAPI);
 app.use('/api/mahasiswa', mahasiswaRouterAPI);
-app.use('/api/menu', menuRouterAPI);
+app.use('/api/game', gameRouterAPI);
 app.use('/api/kategori', kategoriRouterAPI);
 
 // catch 404 and forward to error handler
